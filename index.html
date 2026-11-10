@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        
+        <div class="form-group">
+            <div class="input-wrapper">
+                <input type="text" id="task-input" placeholder="Escribe una tarea...">
+                <span id="error-msg" class="error-hidden">La tarea no puede estar vacía.</span>
+            </div>
+            <button id="add-btn">Agregar</button>
+        </div>
+
+        <div class="counters">
+            <span>Total: <strong id="total-count">0</strong></span>
+            <span>Completadas: <strong id="completed-count">0</strong></span>
+            <span>Incompletas: <strong id="pending-count">0</strong></span>
+        </div>
+
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
